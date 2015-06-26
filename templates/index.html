@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="/materialize/css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="/stylesheets/control-terrestre.css" />
+	<script type="text/javascript" src="/jscripts/jQuery.2.1.4.min.js"></script>
+	<script type="text/javascript" src="/materialize/js/materialize.min.js"></script>
+	<script type="text/javascript" src="/jscripts/openLayers.3.5.0.js"></script>
+</head>
+<body>
+	<div id="map" class="map"></div>
+	<div id="panel" class="panel">
+		
+		<div class="inputDiv input-field">
+			<input disabled id="CONTRATO" type="text">
+			<label id="CONTRATO_LABEL" for="CONTRATO">CONTRATO</label>
+		</div>
+		
+		<div class="inputDiv input-field">
+			<input id="CTRLID" type="text">
+			<label id="CTRLID_LABEL" for="CTRLID">CTRLID</label>
+		</div>
+
+        <div id="TIPO" class="inputDiv input-field">
+			<select id="TIPOselect">
+				<option value="VÉRTICE">VÉRTICE</option>
+				<option value="PLACA">PLACA</option>
+				<option value="MOJONERA">MOJONERA</option>
+				<option value="BN">BN</option>
+				<option value="OTRO">OTRO</option>
+			</select>
+			<label>TIPO</label>
+		</div>
+		
+		<div class="inputDiv input-field">
+			<textarea id="DESCRIPCION" class="materialize-textarea"></textarea>
+			<label id="DESCRIPCION_LABEL" for="DESCRIPCION">DESCRIPCIÓN</label>
+        </div>   
+        
+	</div>
+	<div id="btnDeleteCTRL" class="btnMenu btn-floating btn-large waves-effect waves-light teal"><i class="mdi-action-delete"></i></div>
+	<div id="btnSave" class="btnMenu btn-floating btn-large waves-effect waves-light teal"><i class="mdi-action-lock-outline"></i></div>
+	<div id="btnNewCTRL" class="btnMenu btn-floating btn-large waves-effect waves-light teal"><i class="mdi-action-room"></i></div>
+	<div id="btnZoomIn" class="btn-floating btn-large waves-effect waves-light teal"><i class="mdi-content-add"></i></div>
+	<div id="btnZoomOut" class="btn-floating btn-large waves-effect waves-light teal"><i class="mdi-content-remove"></i></div>
+</body>
+<script type="text/javascript" src="/jscripts/control-terrestre.js"></script>
+</html>
